@@ -1,0 +1,24 @@
+{
+  "name": "shadyurl",
+  "version": "1.0.0",
+  "description": "Small shady looking human readable urls",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && node dist/index.js",
+    "build": "tsc && cp -r src/lists dist/lists && cp -r public dist",
+    "clean": "rm -rf dist"
+  },
+  "author": "Ana Harrison",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

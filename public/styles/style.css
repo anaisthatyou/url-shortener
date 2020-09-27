@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "Roboto Mono";
+	src: url("../fonts/roboto-mono-medium.ttf");
+}
+
+:root {
+	--red: #bd9980;
+	--white: #dcdccc;
+	--yellow: #f0dfaf;
+
+	--bg: #282828;
+	--fg: #3f3f3f;
+
+	--search-bg: rgba(255, 255, 255, 0);
+	--font: "Roboto Mono";
+}
+
+
+body {
+	background-color: var(--bg);
+	color: var(--yellow);
+}
+
+#main_window {
+	background-color: var(--fg);
+	width: 910px;
+	padding-right: 40px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+p[class="contacts"] > a {
+	position: fixed;
+	bottom: 7px;
+	left: 10px;
+	color: var(--yellow);
+}
+
+form {
+	margin: 1em 0;
+	position: relative;
+}
+
+#content {
+	padding-top: 30px;
+	margin-left: 300px;
+}
+
+.title {
+	font-weight: bold;
+	font-style: italic;
+}
+
+h1 {
+	display: inline;
+	font-family: var(--font);
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--red);
+	cursor: pointer;
+}
+
+a {
+	color: var(--yellow);
+}
